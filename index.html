@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Breach Prototype</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="hud">
+      <div><strong>점수:</strong> <span id="score">0</span></div>
+      <div><strong>시간:</strong> <span id="time">90</span>s</div>
+      <div><strong>체력:</strong> <span id="hp">100</span></div>
+      <div class="hint">WASD 이동 · 마우스 시점 · 좌클릭 사격 · Shift 대시</div>
+    </div>
+    <div id="overlay">
+      <h1>Neon Breach</h1>
+      <p>클릭하면 시작됩니다.</p>
+      <p>90초 안에 최대한 많은 드론을 파괴하세요.</p>
+      <button id="startBtn">게임 시작</button>
+    </div>
+    <canvas id="game"></canvas>
+    <script type="module" src="game.js"></script>
+  </body>
+</html>
